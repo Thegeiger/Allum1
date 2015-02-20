@@ -1,0 +1,33 @@
+/*
+** win.h for win in /home/geiger_a/rendu/allum1/include
+**
+** Made by anthony geiger
+** Login   <geiger_a@epitech.net>
+**
+** Started on  Mon Jan 26 11:01:04 2015 anthony geiger
+** Last update Tue Jan 27 15:11:13 2015 anthony geiger
+*/
+
+#ifndef WIN_H_
+# define WIN_H_
+# define HIGHT 4283163
+# define DOWN 4348699
+# define LEFT 4479771
+# define RIGHT 4414235
+# define ESC 27
+# define SPACE 32
+# define SUPPR_KEY 211729
+
+typedef struct		s_wind
+{
+  unsigned short	ws_row;
+  unsigned short	ws_col;
+}			t_wind;
+
+typedef	struct		s_key
+{
+  unsigned long		key;
+  int			(*ptr_tab)();
+}			t_key;
+
+#endif /* !WIN_H_ */
